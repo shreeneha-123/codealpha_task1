@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/cf/2f/e5/cf2fe5a97b8dd60c870cdb3c8ca346d5.jpg" type="image/x-icon">
+</head>
+<body>
+    <h1 id="main__heading">My Image Gallery</h1>
+    <div class="full_img" id="fullImgBox">
+        <span id="prevBtn" onclick="prevImg()">&#10094;</span>
+        <img src="img1.jpg" id="fullImg" alt="image">
+        <span id="nextBtn" onclick="nextImg()">&#10095;</span>
+        <span id="closeBtn" onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img_cell">
+        <img src="img1.jpg" alt="image" onclick="openFullImg(this.src, 0)">
+        <img src="img2.jpg" alt="image" onclick="openFullImg(this.src, 1)">
+        <img src="img3.jpg" alt="image" onclick="openFullImg(this.src, 2)">
+        <img src="img4.jpg" alt="image" onclick="openFullImg(this.src, 3)">
+      
+        <img src="img5.jpg" alt="image" onclick="openFullImg(this.src, 4)">
+        <img src="img6.jpg" alt="image" onclick="openFullImg(this.src, 5)">
+        <img src="img7.jpg" alt="image" onclick="openFullImg(this.src, 6)">
+        <img src="img8.jpg" alt="image" onclick="openFullImg(this.src, 7)">
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
